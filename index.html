@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe5ed">
+  <meta name="description" content="Un petit courrier surprise, juste pour toi ♡">
+  <title>Une petite surprise ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="background-hearts" aria-hidden="true">
+    <span class="pixel-heart heart-a">♥</span>
+    <span class="pixel-heart heart-b">♥</span>
+    <span class="pixel-heart heart-c">♥</span>
+    <span class="pixel-heart heart-d">♥</span>
+    <span class="pixel-heart heart-e">♥</span>
+    <span class="pixel-heart heart-f">♥</span>
+    <span class="pixel-heart heart-g">♥</span>
+  </div>
+
+  <main class="desktop">
+    <div class="little-label"><span class="status-dot"></span><span data-copy="etiquette">[TODO : MINI MESSAGE]</span><span class="label-heart">♥</span></div>
+
+    <section class="window" aria-labelledby="site-title">
+      <header class="window-header">
+        <div class="header-left"><span class="header-icon">♥</span><span>LOVE_LETTER.EXE</span></div>
+        <div class="window-buttons" aria-hidden="true"><span>_</span><span>□</span><span>×</span></div>
+      </header>
+
+      <!-- ÉCRAN 1 : l'enveloppe -->
+      <div id="introScreen" class="window-content intro-screen">
+        <div class="hello-badge" data-copy="badgeAccueil">[TODO : PETIT BADGE]</div>
+        <h1 id="site-title"><span data-copy="titrePrincipal">[TODO : TITRE]</span><br><em data-copy="titreAccent">[TODO : SURNOM]</em> <span class="title-heart">♥</span></h1>
+        <p class="subtitle" data-copy="sousTitre">[TODO : SOUS-TITRE]</p>
+
+        <div class="scene">
+          <div class="avatar-group">
+            <div id="bubbleText" class="speech-bubble" data-copy="bulleAvant">[TODO : BULLE AVANT]</div>
+            <img class="avatar" src="assets/loris.png" alt="Petit avatar pixel art de Loris" width="128" height="128">
+            <div class="avatar-label" data-copy="avatarNom">[TODO : SIGNATURE AVATAR]</div>
+          </div>
+
+          <button type="button" id="envelopeButton" class="envelope-button is-locked" aria-label="Ouvrir l'enveloppe surprise" aria-controls="revealScreen" aria-expanded="false">
+            <span class="envelope-shadow"></span>
+            <span class="envelope-back"></span>
+            <span class="envelope-letter"><span data-copy="enveloppe">[TODO : ENVELOPPE]</span><span class="letter-stamp">✿</span></span>
+            <span class="envelope-flap"></span>
+            <span class="envelope-front"></span>
+            <span class="envelope-fold-left"></span>
+            <span class="envelope-fold-right"></span>
+            <span class="envelope-seal">♥</span>
+          </button>
+          <span class="tap-sparkle one" aria-hidden="true">✧</span>
+          <span class="tap-sparkle two" aria-hidden="true">✧</span>
+        </div>
+
+        <div class="cat-stage" aria-label="Un petit chat animé tient un coeur">
+          <img class="pixel-cat cat-heart" data-gif="heart" alt="Petit chat pixel art avec un coeur" width="96" height="96">
+          <span class="cat-pixel-hearts" aria-hidden="true">♥ ✧ ♥</span>
+        </div>
+
+        <p id="clickHint" class="click-hint" data-copy="indiceAvant" role="status" aria-live="polite">[TODO : INDICE AVANT]</p>
+
+        <div id="countdownPanel" class="countdown-panel">
+          <div class="countdown-heading">OUVERTURE DANS...</div>
+          <div class="countdown" aria-label="Compte à rebours jusqu'à l'anniversaire">
+            <div class="time-unit"><strong id="days">--</strong><small>jours</small></div>
+            <span class="colon">:</span>
+            <div class="time-unit"><strong id="hours">--</strong><small>heures</small></div>
+            <span class="colon">:</span>
+            <div class="time-unit"><strong id="minutes">--</strong><small>min</small></div>
+            <span class="colon">:</span>
+            <div class="time-unit"><strong id="seconds">--</strong><small>sec</small></div>
+          </div>
+          <p id="countdownNote" data-copy="noteCompte">[TODO : NOTE COMPTE A REBOURS]</p>
+        </div>
+      </div>
+
+      <!-- ÉCRAN 2 : les surprises -->
+      <div id="revealScreen" class="window-content reveal-screen" hidden>
+        <div class="pixel-sprinkles" aria-hidden="true">✦ ♥ ✦ ♥ ✦</div>
+        <div class="revealed-avatar">
+          <img src="assets/loris.png" alt="Avatar pixel art de Loris" width="100" height="100">
+          <div class="reveal-bubble" data-copy="bulleApres">[TODO : BULLE APRES]</div>
+        </div>
+        <div class="cat-celebration" aria-label="Un petit chat danse de joie">
+          <span aria-hidden="true">✧</span>
+          <img class="pixel-cat cat-dance" data-gif="dance" alt="Petit chat pixel art qui danse" width="100" height="100">
+          <span aria-hidden="true">♥</span>
+        </div>
+        <p class="hello-badge">★ QUEST UNLOCKED ★</p>
+        <h2 class="reveal-title"><span data-copy="titreSurprise">[TODO : GRAND TITRE APRES]</span><br><em data-copy="titreSurpriseAccent">[TODO : PETIT TITRE APRES]</em> ♥</h2>
+        <p class="reveal-copy" data-copy="introCadeaux">[TODO : INTRO DES CADEAUX]</p>
+
+        <div class="gift-grid">
+          <button type="button" class="gift-card gift-flower" data-gift="flower" aria-label="Découvrir la surprise numéro 1, atelier bijoux fleuris">
+            <span class="gift-number">CADEAU 01</span>
+            <img src="assets/pixel-flower.png" alt="" width="80" height="80">
+            <strong data-copy="cadeau1Titre">[TODO : NOM CADEAU 1]</strong>
+            <span data-copy="cadeau1SousTitre">[TODO : SOUS-TITRE CADEAU 1]</span>
+            <span class="card-action">VOIR LE CADEAU ↗</span>
+          </button>
+          <button type="button" class="gift-card gift-sauna" data-gift="sauna" aria-label="Découvrir la surprise numéro 2, sauna privatif">
+            <span class="gift-number">CADEAU 02</span>
+            <img src="assets/pixel-sauna.png" alt="" width="80" height="80">
+            <strong data-copy="cadeau2Titre">[TODO : NOM CADEAU 2]</strong>
+            <span data-copy="cadeau2SousTitre">[TODO : SOUS-TITRE CADEAU 2]</span>
+            <span class="card-action">VOIR LE CADEAU ↗</span>
+          </button>
+        </div>
+        <p class="reveal-footer" data-copy="motFinal">[TODO : PETIT MOT FINAL]</p>
+        <button type="button" id="backButton" class="secondary-button">↶ revoir l'enveloppe</button>
+      </div>
+    </section>
+    <p class="bottom-credit" data-copy="signature">[TODO : SIGNATURE DU SITE]</p>
+  </main>
+
+  <dialog id="giftDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-frame">
+      <header class="dialog-header"><span>♥ MON PETIT CADEAU ♥</span><button type="button" id="closeDialog" aria-label="Fermer">×</button></header>
+      <div class="dialog-body">
+        <img id="dialogIcon" src="assets/pixel-flower.png" alt="" width="96" height="96">
+        <h3 id="dialogTitle"></h3>
+        <p id="dialogDescription"></p>
+        <button type="button" id="dialogDone" class="primary-button">TROP BIEN ♡</button>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
