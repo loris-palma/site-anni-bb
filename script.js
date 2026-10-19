@@ -11,7 +11,7 @@ const DATE_ANNIVERSAIRE = "2026-10-20"; // TODO : renseigner la date exacte !
 const TEXTES = {
   etiquette: "Petit cadeaux pour bb",
   badgeAccueil: "Heeeeey babe!",
-  titrePrincipal: "Je te souhaiate un Joyeux Anniversaire",
+  titrePrincipal: "Je te souhaite un Joyeux Anniversaire",
   titreAccent: "ma petite Canaille",
   sousTitre: "et joyeux 2 ANS OMGGGG bb",
   avatarNom: "Alfred Chagasse",
@@ -33,7 +33,7 @@ const TEXTES = {
   cadeau1SousTitre: "Atelier créatif pour fabriquer un pendentif en intégrant de vraies fleures séchées.",
   cadeau2Titre: "Sauna privatif",
   cadeau2SousTitre: "Sauna privatif pour se détendre au bord du lac soit à Monruz, soit à Hauterive.",
-  motFinal: "Je t'aime de tout mon coeur mon amour, je suis tellement heureux de partager ma vie avec toi. Ces deux années sont passée à une vitesse folle, et je n'ai l'impression que ce n'est que le début de notre histoire. J'ai tellement hâte de vivre la suite de notre histoire. Gros bisous, je t'aime fort fort fort.",
+  motFinal: "Je t'aime de tout mon coeur mon amour, je suis tellement heureux de partager ma vie avec toi. Ces deux années sont passées à une vitesse folle, et je n'ai l'impression que ce n'est que le début de notre histoire. J'ai tellement hâte de vivre la suite à tes côtés. Gros bisous, je t'aime fort fort fort.",
   signature: "Ton Baleaineau Cassé adoré",
 };
 
